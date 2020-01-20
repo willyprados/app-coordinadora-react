@@ -1,5 +1,4 @@
 import React from "react";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import "date-fns";
 import sub from "date-fns/sub";
@@ -54,23 +53,30 @@ export default function Envios() {
   ];
 
   const options = {
-    responsive: "scroll"
+    responsive: "scroll",
+    selectableRowsHeader: false,
+    selectableRows: "none",
+    filter: false,
+    search: false,
+    print: false,
+    download: false,
+    viewColumns: false
   };
 
   /* eslint-disable */
   const data = [
-    ["04/01/2020", "346523", empresas[0], estados.entregado, actions],
-    ["04/01/2020", "346523", empresas.coordinadora, estados.entregado, actions],
-    ["04/01/2020", "346523", empresas.coordinadora, estados.porEntregar, actions],
-    ["04/01/2020", "346523", empresas.dhl, estados.enviado, actions],
-    ["04/01/2020", "346523", empresas.deprisa, estados.anulado, actions],
-    ["04/01/2020", "346523", empresas.fedex, estados.entregado, actions],
-    ["04/01/2020", "346523", empresas.servientrega, estados.porEntregar, actions],
-    ["04/01/2020", "346523", empresas.coordinadora, estados.porEntregar, actions],
-    ["04/01/2020", "346523", empresas.fedex, estados.entregado, actions],
-    ["04/01/2020", "346523", empresas.servientrega, estados.anulado, actions],
-    ["04/01/2020", "346523", empresas.dhl, estados.enviado, actions],
-    ["04/01/2020", "346523", empresas.servientrega, estados.enviado, actions],
+    ["04/01/2020", "346523", empresas[0], estados[0], actions],
+    ["04/01/2020", "346523", empresas[1], estados[0], actions],
+    ["04/01/2020", "346523", empresas[1], estados[2], actions],
+    ["04/01/2020", "346523", empresas[3], estados[1], actions],
+    ["04/01/2020", "346523", empresas[2], estados[3], actions],
+    ["04/01/2020", "346523", empresas[4], estados[0], actions],
+    ["04/01/2020", "346523", empresas[0], estados[2], actions],
+    ["04/01/2020", "346523", empresas[1], estados[2], actions],
+    ["04/01/2020", "346523", empresas[4], estados[0], actions],
+    ["04/01/2020", "346523", empresas[0], estados[3], actions],
+    ["04/01/2020", "346523", empresas[3], estados[1], actions],
+    ["04/01/2020", "346523", empresas[1], estados[1], actions],
     
   ]
   /* eslint-enable */

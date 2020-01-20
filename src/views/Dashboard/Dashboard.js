@@ -27,7 +27,7 @@ export default function Dashboard() {
               <CardIcon color="warning">
                 <OpenInBrowserIcon />
               </CardIcon>
-              <p className={classes.cardCategory}>Pedidos en recogidos</p>
+              <p className={classes.cardCategory}>Pendientes por recoger</p>
               <h3 className={classes.cardTitle}>
                 115 <small>Paquetes</small>
               </h3>
@@ -43,7 +43,7 @@ export default function Dashboard() {
               <CardIcon color="danger">
                 <LocalShippingIcon />
               </CardIcon>
-              <p className={classes.cardCategory}>Pedidos en Camino</p>
+              <p className={classes.cardCategory}>Pedidos en camino</p>
               <h3 className={classes.cardTitle}>
                 97 <small>Paquetes</small>
               </h3>
