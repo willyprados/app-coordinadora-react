@@ -22,11 +22,24 @@ const estados = ["Entregado", "Enviado", "Por Entregar", "Anulado"];
 
 const empresas = ["Servientrega", "Coordinadora", "Deprisa", "DHL", "FedEx"];
 
+// Fuente
+const idUser = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
+
+const programacion = ["Recibido", "Armando pedido", "Despachado", "Entregado", "Anulado"];
+
+const garantia = [" ", "Solicitud", "Recogido", "En el taller", "Despachado", "Entregado"];
+
+const devolucion = [" ", "Solicitud", "Procesado"];
+
 module.exports = {
   // these 3 are used to create the tasks lists in TasksCard - Dashboard view
   bugs,
   website,
   server,
   estados,
-  empresas
+  empresas,
+  programacion,
+  garantia,
+  devolucion,
+  idUser
 };

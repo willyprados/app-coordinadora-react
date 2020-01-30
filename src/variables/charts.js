@@ -11,6 +11,64 @@ var delays = 80,
 var delays2 = 80,
   durations2 = 500;
 
+
+// ###############################
+// // // Data of user in the table section fuente
+const dataUser = {
+  results: [
+    {
+      id: 1,
+      name: "Blanca Nury Acevedo",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "Caldas"
+    },
+    {
+      id: 2,
+      name: "Luz Mirian Hurtado",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "La Estrella"
+    },
+    {
+      id: 3,
+      name: "Lina Maria Garcia",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "Itagüi"
+    },
+    {
+      id: 4,
+      name: "Diony Del Rocio Montaña",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "San Antonio"
+    },
+    {
+      id: 5,
+      name: "Xiomara Restrepo",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "Medellín"
+    },
+    {
+      id: 6,
+      name: "Leidy Bibiana Marin",
+      address: "Calle 135 sur #50-16",
+      phone: "278 45 08 / 312 618 7345",
+      city: "Yarumal"
+    },
+    
+
+  ]
+}
+
+
+
+
+
+
+
 // ##############################
 // // // Daily Sales
 // #############################
@@ -233,5 +291,6 @@ module.exports = {
   dailySalesChart,
   emailsSubscriptionChart,
   completedTasksChart,
-  deliveryDays
+  deliveryDays,
+  dataUser
 };
