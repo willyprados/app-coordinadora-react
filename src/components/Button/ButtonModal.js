@@ -10,7 +10,6 @@ import Fab from '@material-ui/core/Fab';
 // import DeleteIcon from '@material-ui/icons/Delete';
 // import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
-import { Form } from 'components/Form/Form.js';
 
 
 const useStyles = makeStyles(theme => ({
@@ -68,7 +67,7 @@ Fade.propTypes = {
 
 
 // SpringModal
-export const Prueba = () => {
+export const ButtonModal = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -110,7 +109,7 @@ export const Prueba = () => {
         </Fade>
       </Modal>
       
-      <Form/>
+      
     </div>
     
   );

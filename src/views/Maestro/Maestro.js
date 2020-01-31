@@ -5,6 +5,7 @@ import MUIDataTable from "mui-datatables";
 // import styles from "assets/jss/material-dashboard-react/components/headerLinksStyle.js";
 import { idUser } from "variables/general.js";
 import { dataUser } from "variables/charts.js";
+import { ButtonModal } from "components/Button/ButtonModal.js"
 
 // const useStyles = makeStyles(styles);
 
@@ -17,17 +18,7 @@ export const Maestro = () => {
         "Teléfono",
         "Ciudad",
         "Fuente",
-        "Obseravaciones",
-        "Concepto",
-        "Bono",
-        "Fecha de despacho",
-        "Fecha de entrega",
-        "Usuario",
-        "Mensajero",
-        "Estado",
-        "Ruta",
-        "Tipo Doc",
-        "Numero Doc"
+        "Concepto"
       ];
 
 
@@ -39,7 +30,12 @@ export const Maestro = () => {
         search: false,
         print: false,
         download: false,
-        viewColumns: false
+        viewColumns: false,
+        customToolbar: () => {
+          return (
+            <ButtonModal/>
+          );
+        }
       };
 
       const data = [

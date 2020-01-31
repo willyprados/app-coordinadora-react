@@ -6,7 +6,9 @@ import MUIDataTable from "mui-datatables";
 import { idUser } from "variables/general.js";
 import { dataUser } from "variables/charts.js";
 
-import { Prueba } from "views/Pruebas/Prueba.js";
+// import { Prueba } from "views/Pruebas/Prueba.js";
+// import { Button } from "@material-ui/core";
+import { ButtonModal } from "components/Button/ButtonModal.js";
 
 // const useStyles = makeStyles(styles);
 
@@ -17,11 +19,8 @@ export const Fuente = () => {
         "Concepto",
         "Bono",
         "Estado",
-        "Obseravaciones",
         "Fecha de despacho",
-        "Fecha de entrega",
-        "Tipo Doc",
-        "Numero Doc"
+        "Fecha de entrega"
       ];
 
 
@@ -36,7 +35,7 @@ export const Fuente = () => {
         viewColumns: false,
         customToolbar: () => {
             return (
-              <Prueba
+              <ButtonModal
                 tooltip="Agregar usuario"
                 // onClick={() => {
                 //   setOpenModalModel(true);
